@@ -1,6 +1,7 @@
 <template>
   <div>
-    <ul class="css-ul">
+    <NavBar/>
+    <!-- <ul class="css-ul">
       <li class="css-li">
         <router-link to="/products">List products</router-link>
       </li>
@@ -10,16 +11,19 @@
       <li>
         <router-link to="/components">Form Component</router-link>
       </li>
-    </ul>
+    </ul> -->
     <!-- router -->
     <router-view></router-view>
   </div>
 </template>
 
 <script>
-
+import NavBar from './layout/NavBar' 
 export default {
-  name: 'app'
+  name: 'app',
+  components: {
+    NavBar
+  }
 }
 </script>
 
