@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import App from './App.vue'
 import VueRouter from 'vue-router'
-import Products from './components/Products.vue'
-import Categories from './components/Categories.vue'
+import Products from './components/product/Products.vue'
+import Categories from './components/category/Categories.vue'
 
 Vue.config.productionTip = false
 
@@ -11,7 +11,8 @@ const router = new VueRouter({
   mode: 'history',
   routes: [
     { path: '/pro', component: Products },
-    { path: '/categories', component: Categories }
+    { path: '/categories', component: Categories },
+    { path: '*', component: {template: '<h1>Page not found</h1>'}}
   ]
 })
 new Vue({

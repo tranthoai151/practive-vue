@@ -1,7 +1,7 @@
 <template>
      <div>
           <h1>
-               {{ title }},
+               {{ title }}
           </h1>
           <p>
                {{content}}
