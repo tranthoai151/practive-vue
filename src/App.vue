@@ -2,10 +2,13 @@
   <div>
     <ul class="css-ul">
       <li class="css-li">
-        <router-link to="/pro">List products</router-link>
+        <router-link to="/products">List products</router-link>
       </li>
       <li>
         <router-link to="/categories">List Categorty</router-link>
+      </li>
+      <li>
+        <router-link to="/components">Form Component</router-link>
       </li>
     </ul>
     <!-- router -->
